@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">小站</string>
+    <string name="basic_more">更多</string>
+    <string name="basic_finish">关闭页面</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_inputname"><font size="12">请输入姓名</font></string>
+    <string name="hint_inputaddress"><font size="12">请输入地址</font></string>
+    <string name="hint_inputpwd"><font size="12">请输入密码</font></string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="test_content1">1、种植业升级。 \n现烤的面包店增多，欧包更流行。 \n这不止意味着消费者口味的变化，更意味着我国农业生产升级，在很长一段时间里我国小麦产量过剩，用于制作面包的小麦却基本依赖进口。</string>
+    <string name="test_content2">2、 进口源多样化。 \n牛羊肉价格降低、部位细分，进口源更加多样。 \n我国牛羊肉曾经分类粗糙，只分黄牛水牛，羊肉只分山羊绵羊，现在部位、种类细分明确，之前直接跟高档餐厅签单的肉品开始向精品超市供货。 \n进口肉类多样则体现在加拿大、乌拉圭、阿根廷、新西兰、澳大利亚诸多国家的稳定供应量增长，居民牛羊肉消费需求不断得到满足。 \n最近的消息是美国牛肉也开放进口了，牛肉价格还会降低，品质还会提升。</string>
+    <string name="test_content3">3、 生产品类升级。 \n食用油品类不断丰富，智商税逐渐消除。 \n曾经我国因为食用油品类单一，基本只有大豆油玉米油花生油菜籽油葵花籽油，厂商产品同质化严重只好加收智商税，压榨方式、配比调和（多掺棕榈油）、非转基因这些概念都是他们重点宣传的内容。 现在消费者们明白了，压榨浸出差不多，怎么调和都比不上混吃几种原榨，转不转基因没啥区别。 \n现在食用油的新方向是：橄榄油开心果油核桃油椰子油葡萄籽油巴旦木油……</string>
+    <string name="test_content4">4、 产品求异倾向明显。 \n冷柜冻货一度是穷人的蛋白质来源，冻虾冻鸡胸鸭架冻鱿鱼冻巴沙鱼片，5块钱能维持1天的蛋白质。 \n现在冷柜产品则被各种小海鲜占领，常见如三文鱼金枪鱼犬牙鱼海参鲍鱼，新奇如鲥鱼真鳕鱼各种虾贝海肠，曾经的淀粉丸子也变成了追求Q弹的鱼蛋，就连罐头也不只是沙丁鱼鲮鱼，而有烟熏牡蛎蒲烧鳗鱼。 \n冷柜现在的形象不再是穷人天堂，而是体验派的日常。</string>
+    <string name="test_content5">5、信息逐渐透明，专业度升级。\n牛排是否原切，澳洲蜂蜜麦卢卡等级，国产蜂蜜是否可溯源，酸奶灭菌方式及菌种，猪肉是约克夏还是黑山猪藏香猪，榴莲不同品种身价相差数倍，巧克力是否代可可脂，果汁榨取方式原汁含量……\n这些曾经劣币驱逐良币的猫腻，消费者开始有意识的甄别。</string>
+    <string name="test_content6">6、饮食审美升级。\n包装简约、口味清淡、卖点有创意，成了零食界的“话少胸小表情屌”。\n曾经红极一时的国民级零食产品，方便面喜欢把汪老师放在封面对着大鱼大肉痴汉笑、饮料喜欢把糖精色素往死里放、德芙喜欢在超市里插一块巨大的买一送一减价牌、旺旺集团喜欢在售卖区循环轰炸洗脑宣传词……\n现在他们都卖不动了，方便面包装要去明星化、巧克力要突出纯度和可可豆来源、曾经被当黑暗液体的东方树叶成了白领新宠、谁循环播喜庆音乐谁自寻死路……</string>
+    <string name="test_content7">7、烹饪工具升级。\n烤箱在知乎被奉为“相见恨晚的商品top3”，一个300元出头的电烤箱就可以胜任绝大多数的美食阿婆主教程。\n一方面这是中国工业产品白菜价的体现，另一方面，一个烤箱背后是：电动打蛋器和和面机、专用模具与裱花、优质面粉与酵母、黄油、烘焙纸等等配套用品，烘焙是一种高单次成本的烹饪方式。\n我甚至觉得烤箱就是烹饪界的航母，如果一个家庭能保持烤箱不闲置，说明家庭“生活体系”发达。</string>
+    <string name="test_content8">8、调味品升级。\n狼与香辛料告诉我们，稀有调料就是软黄金一样的存在。\n现在厨房必须单独开辟一片区域，囤积各种奇怪的调料，他们担任着异域菜品烹饪的重任，得益于电商和网络厨房课堂的普及，普通消费者也知道了它们该怎么用，搭配什么食材，即便懒得细究，迷迭香百里香炒腊肉也没什么不可以，我试过，真的还行。</string>
+    <string name="title_activity_handler_thread">HandlerThreadActivity</string>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/layout_actionbar_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/modalsheets_btn_bottomfragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner_selector"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Show BottomSheet Dialog Fragment"
+        app:layout_constraintBottom_toBottomOf="@id/modalsheets_btn_bottomdialog"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/modalsheets_btn_bottomdialog"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_actionbar" />
+
+    <Button
+        android:id="@+id/modalsheets_btn_bottomdialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner_selector"
+        android:padding="5dp"
+        android:text="Show BottomSheet DialogFragment Dialog"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/modalsheets_btn_bottomfragment"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_actionbar" />
+
+
+    <Button
+        android:id="@+id/modalsheets_btn_dialogfragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner_selector"
+        android:padding="5dp"
+        android:text="Show Dialog Fragment"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/modalsheets_btn_dialog"
+        app:layout_constraintTop_toBottomOf="@id/modalsheets_btn_bottomdialog" />
+
+    <Button
+        android:id="@+id/modalsheets_btn_dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner_selector"
+        android:padding="5dp"
+        android:text="Show Dialog"
+        app:layout_constraintBaseline_toBaselineOf="@id/modalsheets_btn_dialogfragment"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/modalsheets_btn_dialogfragment"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/modalsheets_btn_bottomdialog" />
+
+    <Button
+        android:id="@+id/modalsheets_btn_bottomsheetdialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner_selector"
+        android:padding="5dp"
+        android:text="Show BottomSheet Dialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/modalsheets_btn_dialog" />
+
+
+    <FrameLayout
+        android:id="@+id/modalsheets_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/modalsheets_btn_bottomsheetdialog">
+
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

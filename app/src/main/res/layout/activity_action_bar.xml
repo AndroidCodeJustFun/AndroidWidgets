@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiao.demo.materialdesign.ActionBarActivity">
+
+
+    <!--include 指定有ID時Activity中無法直接引用對應layout中控件，
+    必須將include視為佈局，先findviewById初始化得到view  ，再通過view獲取layout中控件 -->
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/layout_actionbar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/actionbar_btn_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/round_corner_selector"
+        android:text="ActionBar"
+        android:textAppearance="@style/Toolbar.TitleTextStyle"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/actionbar_btn_actionbar_customview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/round_corner_selector"
+        android:text="ActionBarCustomView"
+        android:textAppearance="@style/Toolbar.TitleTextStyle"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/actionbar_btn_actionbar" />
+
+    <Button
+        android:id="@+id/actionbar_btn_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/round_corner_selector"
+        android:text="ToolBar"
+        android:textAppearance="@style/Toolbar.TitleTextStyle"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/actionbar_btn_actionbar_customview" />
+
+
+</android.support.constraint.ConstraintLayout>

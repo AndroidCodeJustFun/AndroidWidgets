@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:alignContent="flex_start"
+        app:alignItems="stretch"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start">
+
+        <Button
+            android:id="@+id/main_btn_imageloader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_corner_selector"
+            android:padding="5dp"
+            android:text="ImageLoader"
+            android:textStyle=""
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/main_btn_design"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_corner_selector"
+            android:padding="5dp"
+            android:text="MaterialDesign"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/main_btn_retrofit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_corner_selector"
+            android:padding="5dp"
+            android:text="retrofit"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/main_btn_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_corner_selector"
+            android:padding="5dp"
+            android:text="Animation"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/main_btn_arouter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_corner_selector"
+            android:padding="5dp"
+            android:text="Arouter"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/main_btn_widget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_corner_selector"
+            android:padding="5dp"
+            android:text="Widget"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+</ScrollView>

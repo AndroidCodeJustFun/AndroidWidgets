@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="all"
+        android:enabled="true"
+        android:menuCategory="container"
+        android:orderInCategory="1">
+
+        <item
+            android:id="@+id/group1_item1"
+            android:icon="@mipmap/ic_assignment_black_24dp"
+            android:menuCategory="container"
+            android:title="菜单一"></item>
+
+        <item
+            android:id="@+id/group1_item2"
+            android:menuCategory="container"
+            android:title="菜单二"></item>
+    </group>
+
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single"
+        android:enabled="true"
+        android:menuCategory="container"
+        android:orderInCategory="1">
+
+        <item
+            android:id="@+id/group2_item1"
+            android:icon="@mipmap/ic_assignment_ind_black_24dp"
+            android:menuCategory="container"
+            android:title="菜单2.1"></item>
+
+        <item
+            android:id="@+id/group2_item2"
+            android:menuCategory="container"
+            android:title="菜单2.2"></item>
+    </group>
+
+</menu>

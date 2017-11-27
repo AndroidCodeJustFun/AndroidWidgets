@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu2_item1"
+        android:contentDescription="Item1"
+        android:icon="@mipmap/ic_flash_auto_white_18dp"
+        android:title="菜单一"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/menu2_item2"
+        android:contentDescription="Item2"
+        android:icon="@mipmap/ic_audiotrack_white_18dp"
+        android:title="菜单二"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu2_item3"
+        android:contentDescription="Item3"
+        android:icon="@mipmap/ic_add_a_photo_white_18dp"
+        android:title="菜单三"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/menu2_item4"
+        android:contentDescription="Item4"
+        android:icon="@mipmap/ic_assignment_ind_white_18dp"
+        android:title="菜单四"
+        app:showAsAction="collapseActionView" />
+
+
+</menu>

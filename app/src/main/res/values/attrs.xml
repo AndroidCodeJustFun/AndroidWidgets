@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomBehavior">
+        <attr name="finalHeight" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomView1">
+        <attr name="minHeight" format="dimension|reference" />
+        <attr name="minWidth" format="dimension|reference" />
+        <attr name="backColor" format="color|reference" />
+        <attr name="contentColor" format="color|reference" />
+        <attr name="showBackground" format="boolean" />
+        <attr name="showForeGround" format="boolean" />
+        <attr name="content" format="string|reference" />
+        <attr name="frc" format="fraction" />
+    </declare-styleable>
+
+    <declare-styleable name="TimeAxisLayout">
+        <attr name="startColor" format="color|reference" />
+        <attr name="middleColor" format="color|reference" />
+        <attr name="endColor" format="color|reference" />
+        <attr name="startRadius" format="dimension|reference" />
+        <attr name="endRadius" format="dimension|reference" />
+        <attr name="middleRadius" format="dimension|reference" />
+        <attr name="axisColor" format="reference|color" />
+        <attr name="iconRes" format="reference" />
+    </declare-styleable>
+
+</resources>

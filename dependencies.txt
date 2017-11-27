@@ -1,0 +1,403 @@
+Initialized native services in: /Users/xiao/Library/Gradle/native
+The client will now receive all logging from the daemon (pid: 5180). The daemon log file: /Users/xiao/Library/Gradle/daemon/4.1/daemon-5180.out.log
+Starting 56th build in daemon [uptime: 7 hrs 16 mins 29.496 secs, performance: 66%, no major garbage collections]
+Using 4 worker leases.
+Creating new cache for fileHashes, path /Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/.gradle/4.1/fileHashes/fileHashes.bin, access org.gradle.cache.internal.DefaultCacheAccess@641d6cf9
+Invalidating in-memory cache of /Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/.gradle/4.1/fileHashes/fileHashes.bin
+Creating new cache for plugin-use-metadata, path /Users/xiao/Library/Gradle/caches/4.1/plugin-resolution/plugin-use-metadata.bin, access org.gradle.cache.internal.DefaultCacheAccess@63ec9f13
+Creating new cache for client-status, path /Users/xiao/Library/Gradle/caches/4.1/plugin-resolution/client-status.bin, access org.gradle.cache.internal.DefaultCacheAccess@63ec9f13
+Starting Build
+Settings evaluated using settings file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/settings.gradle'.
+Projects loaded. Root project using build file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/build.gradle'.
+Included projects: [root project 'AndroidDemo2', project ':app']
+Evaluating root project 'AndroidDemo2' using build file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/build.gradle'.
+Creating new cache for metadata-1.1/results, path /Users/xiao/Library/Gradle/caches/transforms-1/metadata-1.1/results.bin, access org.gradle.cache.internal.DefaultCacheAccess@3c9e435e
+Creating new cache for metadata-2.23/module-metadata, path /Users/xiao/Library/Gradle/caches/modules-2/metadata-2.23/module-metadata.bin, access org.gradle.cache.internal.DefaultCacheAccess@1a18359f
+Creating new cache for metadata-2.23/artifact-at-repository, path /Users/xiao/Library/Gradle/caches/modules-2/metadata-2.23/artifact-at-repository.bin, access org.gradle.cache.internal.DefaultCacheAccess@1a18359f
+Evaluating project ':app' using build file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/app/build.gradle'.
+Compiling build file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/app/build.gradle' using SubsetScriptTransformer.
+Compiling build file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/app/build.gradle' using BuildScriptTransformer.
+Creating configuration androidTestUtil
+Creating configuration compile
+Creating configuration apk
+Creating configuration provided
+Creating configuration api
+Creating configuration implementation
+Creating configuration runtimeOnly
+Creating configuration compileOnly
+Creating configuration wearApp
+Creating configuration annotationProcessor
+Creating configuration androidTestCompile
+Creating configuration androidTestApk
+Creating configuration androidTestProvided
+Creating configuration androidTestApi
+Creating configuration androidTestImplementation
+Creating configuration androidTestRuntimeOnly
+Creating configuration androidTestCompileOnly
+Creating configuration androidTestWearApp
+Creating configuration androidTestAnnotationProcessor
+Creating configuration testCompile
+Creating configuration testApk
+Creating configuration testProvided
+Creating configuration testApi
+Creating configuration testImplementation
+Creating configuration testRuntimeOnly
+Creating configuration testCompileOnly
+Creating configuration testWearApp
+Creating configuration testAnnotationProcessor
+Creating configuration debugCompile
+Creating configuration debugApk
+Creating configuration debugProvided
+Creating configuration debugApi
+Creating configuration debugImplementation
+Creating configuration debugRuntimeOnly
+Creating configuration debugCompileOnly
+Creating configuration debugWearApp
+Creating configuration debugAnnotationProcessor
+Creating configuration testDebugCompile
+Creating configuration testDebugApk
+Creating configuration testDebugProvided
+Creating configuration testDebugApi
+Creating configuration testDebugImplementation
+Creating configuration testDebugRuntimeOnly
+Creating configuration testDebugCompileOnly
+Creating configuration testDebugWearApp
+Creating configuration testDebugAnnotationProcessor
+Creating configuration releaseCompile
+Creating configuration releaseApk
+Creating configuration releaseProvided
+Creating configuration releaseApi
+Creating configuration releaseImplementation
+Creating configuration releaseRuntimeOnly
+Creating configuration releaseCompileOnly
+Creating configuration releaseWearApp
+Creating configuration releaseAnnotationProcessor
+Creating configuration testReleaseCompile
+Creating configuration testReleaseApk
+Creating configuration testReleaseProvided
+Creating configuration testReleaseApi
+Creating configuration testReleaseImplementation
+Creating configuration testReleaseRuntimeOnly
+Creating configuration testReleaseCompileOnly
+Creating configuration testReleaseWearApp
+Creating configuration testReleaseAnnotationProcessor
+Parsing the SDK, no caching allowed
+Parsing /Users/xiao/Library/Android/sdk/build-tools/23.0.1/package.xml
+Parsing /Users/xiao/Library/Android/sdk/build-tools/25.0.2/package.xml
+Parsing /Users/xiao/Library/Android/sdk/build-tools/26.0.1/package.xml
+Parsing /Users/xiao/Library/Android/sdk/extras/android/m2repository/package.xml
+Parsing /Users/xiao/Library/Android/sdk/extras/google/m2repository/package.xml
+Parsing /Users/xiao/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/package.xml
+Parsing /Users/xiao/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout/1.0.2/package.xml
+Parsing /Users/xiao/Library/Android/sdk/patcher/v4/package.xml
+Parsing /Users/xiao/Library/Android/sdk/platform-tools/package.xml
+Parsing /Users/xiao/Library/Android/sdk/platforms/android-14/package.xml
+Parsing /Users/xiao/Library/Android/sdk/platforms/android-19/package.xml
+Parsing /Users/xiao/Library/Android/sdk/platforms/android-21/package.xml
+Parsing /Users/xiao/Library/Android/sdk/platforms/android-22/package.xml
+Parsing /Users/xiao/Library/Android/sdk/platforms/android-23/package.xml
+Parsing /Users/xiao/Library/Android/sdk/platforms/android-24/package.xml
+Parsing /Users/xiao/Library/Android/sdk/platforms/android-25/package.xml
+Parsing /Users/xiao/Library/Android/sdk/platforms/android-26/package.xml
+Parsing /Users/xiao/Library/Android/sdk/sources/android-14/package.xml
+Parsing /Users/xiao/Library/Android/sdk/sources/android-19/package.xml
+Parsing /Users/xiao/Library/Android/sdk/sources/android-21/package.xml
+Parsing /Users/xiao/Library/Android/sdk/sources/android-22/package.xml
+Parsing /Users/xiao/Library/Android/sdk/sources/android-23/package.xml
+Parsing /Users/xiao/Library/Android/sdk/sources/android-24/package.xml
+Parsing /Users/xiao/Library/Android/sdk/sources/android-25/package.xml
+Parsing /Users/xiao/Library/Android/sdk/tools/package.xml
+SDK initialized in 142 ms
+Using incremental javac compilation for :app debug.
+Using incremental javac compilation for :app debugUnitTest.
+Using incremental javac compilation for :app release.
+Using incremental javac compilation for :app releaseUnitTest.
+Using incremental javac compilation for :app debugAndroidTest.
+All projects evaluated.
+Initialized native services in: /Users/xiao/Library/Gradle/native
+The client will now receive all logging from the daemon (pid: 5180). The daemon log file: /Users/xiao/Library/Gradle/daemon/4.1/daemon-5180.out.log
+Starting 57th build in daemon [uptime: 7 hrs 16 mins 55.478 secs, performance: 66%, no major garbage collections]
+Using 4 worker leases.
+Creating new cache for fileHashes, path /Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/.gradle/4.1/fileHashes/fileHashes.bin, access org.gradle.cache.internal.DefaultCacheAccess@3800ba63
+Creating new cache for plugin-use-metadata, path /Users/xiao/Library/Gradle/caches/4.1/plugin-resolution/plugin-use-metadata.bin, access org.gradle.cache.internal.DefaultCacheAccess@483a08c3
+Creating new cache for client-status, path /Users/xiao/Library/Gradle/caches/4.1/plugin-resolution/client-status.bin, access org.gradle.cache.internal.DefaultCacheAccess@483a08c3
+Starting Build
+Settings evaluated using settings file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/settings.gradle'.
+Projects loaded. Root project using build file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/build.gradle'.
+Included projects: [root project 'AndroidDemo2', project ':app']
+Evaluating root project 'AndroidDemo2' using build file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/build.gradle'.
+Creating new cache for metadata-1.1/results, path /Users/xiao/Library/Gradle/caches/transforms-1/metadata-1.1/results.bin, access org.gradle.cache.internal.DefaultCacheAccess@121fd391
+Creating new cache for metadata-2.23/module-metadata, path /Users/xiao/Library/Gradle/caches/modules-2/metadata-2.23/module-metadata.bin, access org.gradle.cache.internal.DefaultCacheAccess@6d292e9b
+Creating new cache for metadata-2.23/artifact-at-repository, path /Users/xiao/Library/Gradle/caches/modules-2/metadata-2.23/artifact-at-repository.bin, access org.gradle.cache.internal.DefaultCacheAccess@6d292e9b
+Evaluating project ':app' using build file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/app/build.gradle'.
+Creating configuration androidTestUtil
+Creating configuration compile
+Creating configuration apk
+Creating configuration provided
+Creating configuration api
+Creating configuration implementation
+Creating configuration runtimeOnly
+Creating configuration compileOnly
+Creating configuration wearApp
+Creating configuration annotationProcessor
+Creating configuration androidTestCompile
+Creating configuration androidTestApk
+Creating configuration androidTestProvided
+Creating configuration androidTestApi
+Creating configuration androidTestImplementation
+Creating configuration androidTestRuntimeOnly
+Creating configuration androidTestCompileOnly
+Creating configuration androidTestWearApp
+Creating configuration androidTestAnnotationProcessor
+Creating configuration testCompile
+Creating configuration testApk
+Creating configuration testProvided
+Creating configuration testApi
+Creating configuration testImplementation
+Creating configuration testRuntimeOnly
+Creating configuration testCompileOnly
+Creating configuration testWearApp
+Creating configuration testAnnotationProcessor
+Creating configuration debugCompile
+Creating configuration debugApk
+Creating configuration debugProvided
+Creating configuration debugApi
+Creating configuration debugImplementation
+Creating configuration debugRuntimeOnly
+Creating configuration debugCompileOnly
+Creating configuration debugWearApp
+Creating configuration debugAnnotationProcessor
+Creating configuration testDebugCompile
+Creating configuration testDebugApk
+Creating configuration testDebugProvided
+Creating configuration testDebugApi
+Creating configuration testDebugImplementation
+Creating configuration testDebugRuntimeOnly
+Creating configuration testDebugCompileOnly
+Creating configuration testDebugWearApp
+Creating configuration testDebugAnnotationProcessor
+Creating configuration releaseCompile
+Creating configuration releaseApk
+Creating configuration releaseProvided
+Creating configuration releaseApi
+Creating configuration releaseImplementation
+Creating configuration releaseRuntimeOnly
+Creating configuration releaseCompileOnly
+Creating configuration releaseWearApp
+Creating configuration releaseAnnotationProcessor
+Creating configuration testReleaseCompile
+Creating configuration testReleaseApk
+Creating configuration testReleaseProvided
+Creating configuration testReleaseApi
+Creating configuration testReleaseImplementation
+Creating configuration testReleaseRuntimeOnly
+Creating configuration testReleaseCompileOnly
+Creating configuration testReleaseWearApp
+Creating configuration testReleaseAnnotationProcessor
+Parsing the SDK, no caching allowed
+SDK initialized in 5 ms
+Using incremental javac compilation for :app debug.
+Using incremental javac compilation for :app debugUnitTest.
+Using incremental javac compilation for :app release.
+Using incremental javac compilation for :app releaseUnitTest.
+Using incremental javac compilation for :app debugAndroidTest.
+All projects evaluated.
+Initialized native services in: /Users/xiao/Library/Gradle/native
+The client will now receive all logging from the daemon (pid: 5180). The daemon log file: /Users/xiao/Library/Gradle/daemon/4.1/daemon-5180.out.log
+Starting 58th build in daemon [uptime: 7 hrs 17 mins 13.339 secs, performance: 66%, no major garbage collections]
+Using 4 worker leases.
+Creating new cache for fileHashes, path /Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/.gradle/4.1/fileHashes/fileHashes.bin, access org.gradle.cache.internal.DefaultCacheAccess@6a80130f
+Creating new cache for plugin-use-metadata, path /Users/xiao/Library/Gradle/caches/4.1/plugin-resolution/plugin-use-metadata.bin, access org.gradle.cache.internal.DefaultCacheAccess@23cd13ca
+Creating new cache for client-status, path /Users/xiao/Library/Gradle/caches/4.1/plugin-resolution/client-status.bin, access org.gradle.cache.internal.DefaultCacheAccess@23cd13ca
+Starting Build
+Settings evaluated using settings file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/settings.gradle'.
+Projects loaded. Root project using build file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/build.gradle'.
+Included projects: [root project 'AndroidDemo2', project ':app']
+Evaluating root project 'AndroidDemo2' using build file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/build.gradle'.
+Creating new cache for metadata-1.1/results, path /Users/xiao/Library/Gradle/caches/transforms-1/metadata-1.1/results.bin, access org.gradle.cache.internal.DefaultCacheAccess@572aa297
+Creating new cache for metadata-2.23/module-metadata, path /Users/xiao/Library/Gradle/caches/modules-2/metadata-2.23/module-metadata.bin, access org.gradle.cache.internal.DefaultCacheAccess@4f599404
+Creating new cache for metadata-2.23/artifact-at-repository, path /Users/xiao/Library/Gradle/caches/modules-2/metadata-2.23/artifact-at-repository.bin, access org.gradle.cache.internal.DefaultCacheAccess@4f599404
+Evaluating project ':app' using build file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/app/build.gradle'.
+Creating configuration androidTestUtil
+Creating configuration compile
+Creating configuration apk
+Creating configuration provided
+Creating configuration api
+Creating configuration implementation
+Creating configuration runtimeOnly
+Creating configuration compileOnly
+Creating configuration wearApp
+Creating configuration annotationProcessor
+Creating configuration androidTestCompile
+Creating configuration androidTestApk
+Creating configuration androidTestProvided
+Creating configuration androidTestApi
+Creating configuration androidTestImplementation
+Creating configuration androidTestRuntimeOnly
+Creating configuration androidTestCompileOnly
+Creating configuration androidTestWearApp
+Creating configuration androidTestAnnotationProcessor
+Creating configuration testCompile
+Creating configuration testApk
+Creating configuration testProvided
+Creating configuration testApi
+Creating configuration testImplementation
+Creating configuration testRuntimeOnly
+Creating configuration testCompileOnly
+Creating configuration testWearApp
+Creating configuration testAnnotationProcessor
+Creating configuration debugCompile
+Creating configuration debugApk
+Creating configuration debugProvided
+Creating configuration debugApi
+Creating configuration debugImplementation
+Creating configuration debugRuntimeOnly
+Creating configuration debugCompileOnly
+Creating configuration debugWearApp
+Creating configuration debugAnnotationProcessor
+Creating configuration testDebugCompile
+Creating configuration testDebugApk
+Creating configuration testDebugProvided
+Creating configuration testDebugApi
+Creating configuration testDebugImplementation
+Creating configuration testDebugRuntimeOnly
+Creating configuration testDebugCompileOnly
+Creating configuration testDebugWearApp
+Creating configuration testDebugAnnotationProcessor
+Creating configuration releaseCompile
+Creating configuration releaseApk
+Creating configuration releaseProvided
+Creating configuration releaseApi
+Creating configuration releaseImplementation
+Creating configuration releaseRuntimeOnly
+Creating configuration releaseCompileOnly
+Creating configuration releaseWearApp
+Creating configuration releaseAnnotationProcessor
+Creating configuration testReleaseCompile
+Creating configuration testReleaseApk
+Creating configuration testReleaseProvided
+Creating configuration testReleaseApi
+Creating configuration testReleaseImplementation
+Creating configuration testReleaseRuntimeOnly
+Creating configuration testReleaseCompileOnly
+Creating configuration testReleaseWearApp
+Creating configuration testReleaseAnnotationProcessor
+Parsing the SDK, no caching allowed
+SDK initialized in 8 ms
+Using incremental javac compilation for :app debug.
+Using incremental javac compilation for :app debugUnitTest.
+Using incremental javac compilation for :app release.
+Using incremental javac compilation for :app releaseUnitTest.
+Using incremental javac compilation for :app debugAndroidTest.
+All projects evaluated.
+Initialized native services in: /Users/xiao/Library/Gradle/native
+The client will now receive all logging from the daemon (pid: 5180). The daemon log file: /Users/xiao/Library/Gradle/daemon/4.1/daemon-5180.out.log
+Starting 59th build in daemon [uptime: 7 hrs 17 mins 22.687 secs, performance: 66%, no major garbage collections]
+Using 4 worker leases.
+Creating new cache for fileHashes, path /Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/.gradle/4.1/fileHashes/fileHashes.bin, access org.gradle.cache.internal.DefaultCacheAccess@74831317
+Creating new cache for plugin-use-metadata, path /Users/xiao/Library/Gradle/caches/4.1/plugin-resolution/plugin-use-metadata.bin, access org.gradle.cache.internal.DefaultCacheAccess@6e4327d5
+Creating new cache for client-status, path /Users/xiao/Library/Gradle/caches/4.1/plugin-resolution/client-status.bin, access org.gradle.cache.internal.DefaultCacheAccess@6e4327d5
+Starting Build
+Settings evaluated using settings file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/settings.gradle'.
+Projects loaded. Root project using build file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/build.gradle'.
+Included projects: [root project 'AndroidDemo2', project ':app']
+Evaluating root project 'AndroidDemo2' using build file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/build.gradle'.
+Creating new cache for metadata-1.1/results, path /Users/xiao/Library/Gradle/caches/transforms-1/metadata-1.1/results.bin, access org.gradle.cache.internal.DefaultCacheAccess@6317f311
+Creating new cache for metadata-2.23/module-metadata, path /Users/xiao/Library/Gradle/caches/modules-2/metadata-2.23/module-metadata.bin, access org.gradle.cache.internal.DefaultCacheAccess@354fa500
+Creating new cache for metadata-2.23/artifact-at-repository, path /Users/xiao/Library/Gradle/caches/modules-2/metadata-2.23/artifact-at-repository.bin, access org.gradle.cache.internal.DefaultCacheAccess@354fa500
+Evaluating project ':app' using build file '/Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/app/build.gradle'.
+Creating configuration androidTestUtil
+Creating configuration compile
+Creating configuration apk
+Creating configuration provided
+Creating configuration api
+Creating configuration implementation
+Creating configuration runtimeOnly
+Creating configuration compileOnly
+Creating configuration wearApp
+Creating configuration annotationProcessor
+Creating configuration androidTestCompile
+Creating configuration androidTestApk
+Creating configuration androidTestProvided
+Creating configuration androidTestApi
+Creating configuration androidTestImplementation
+Creating configuration androidTestRuntimeOnly
+Creating configuration androidTestCompileOnly
+Creating configuration androidTestWearApp
+Creating configuration androidTestAnnotationProcessor
+Creating configuration testCompile
+Creating configuration testApk
+Creating configuration testProvided
+Creating configuration testApi
+Creating configuration testImplementation
+Creating configuration testRuntimeOnly
+Creating configuration testCompileOnly
+Creating configuration testWearApp
+Creating configuration testAnnotationProcessor
+Creating configuration debugCompile
+Creating configuration debugApk
+Creating configuration debugProvided
+Creating configuration debugApi
+Creating configuration debugImplementation
+Creating configuration debugRuntimeOnly
+Creating configuration debugCompileOnly
+Creating configuration debugWearApp
+Creating configuration debugAnnotationProcessor
+Creating configuration testDebugCompile
+Creating configuration testDebugApk
+Creating configuration testDebugProvided
+Creating configuration testDebugApi
+Creating configuration testDebugImplementation
+Creating configuration testDebugRuntimeOnly
+Creating configuration testDebugCompileOnly
+Creating configuration testDebugWearApp
+Creating configuration testDebugAnnotationProcessor
+Creating configuration releaseCompile
+Creating configuration releaseApk
+Creating configuration releaseProvided
+Creating configuration releaseApi
+Creating configuration releaseImplementation
+Creating configuration releaseRuntimeOnly
+Creating configuration releaseCompileOnly
+Creating configuration releaseWearApp
+Creating configuration releaseAnnotationProcessor
+Creating configuration testReleaseCompile
+Creating configuration testReleaseApk
+Creating configuration testReleaseProvided
+Creating configuration testReleaseApi
+Creating configuration testReleaseImplementation
+Creating configuration testReleaseRuntimeOnly
+Creating configuration testReleaseCompileOnly
+Creating configuration testReleaseWearApp
+Creating configuration testReleaseAnnotationProcessor
+Parsing the SDK, no caching allowed
+SDK initialized in 5 ms
+Using incremental javac compilation for :app debug.
+Using incremental javac compilation for :app debugUnitTest.
+Using incremental javac compilation for :app release.
+Using incremental javac compilation for :app releaseUnitTest.
+Using incremental javac compilation for :app debugAndroidTest.
+All projects evaluated.
+Selected primary task 'dependencies' from project :
+Tasks to be executed: [task ':dependencies']
+Creating new cache for resourceHashesCache, path /Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/.gradle/4.1/fileHashes/resourceHashesCache.bin, access org.gradle.cache.internal.DefaultCacheAccess@74831317
+Invalidating in-memory cache of /Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/.gradle/4.1/fileHashes/resourceHashesCache.bin
+Creating new cache for fileSnapshots, path /Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/.gradle/4.1/taskHistory/fileSnapshots.bin, access org.gradle.cache.internal.DefaultCacheAccess@2f765e81
+Invalidating in-memory cache of /Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/.gradle/4.1/taskHistory/fileSnapshots.bin
+Creating new cache for taskHistory, path /Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/.gradle/4.1/taskHistory/taskHistory.bin, access org.gradle.cache.internal.DefaultCacheAccess@2f765e81
+Invalidating in-memory cache of /Users/xiao/Work2017/Own/OtherDemo/0-Architecture/AndroidDemo2/.gradle/4.1/taskHistory/taskHistory.bin
+:dependencies (Thread[Task worker for ':',5,main]) started.
+:dependencies
+Putting task artifact state for task ':dependencies' into context took 0.001 secs.
+Executing task ':dependencies' (up-to-date check took 0.0 secs) due to:
+  Task.upToDateWhen is false.
+
+------------------------------------------------------------
+Root project
+------------------------------------------------------------
+
+No configurations
+:dependencies (Thread[Task worker for ':',5,main]) completed. Took 0.009 secs.
+
+BUILD SUCCESSFUL in 0s
+1 actionable task: 1 executed

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/layout_actionbar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/textColorPrimary"
+        android:fitsSystemWindows="true"
+        android:paddingBottom="15dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/coordinator_tv_des"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:autoLink="all"
+                android:text="查看网页介绍"
+                android:textSize="16sp"
+                android:textStyle="italic|bold"
+                android:typeface="sans"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/coordinatelayout_cardview_snackbarfab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:minHeight="?attr/actionBarSize"
+                app:cardBackgroundColor="#eee"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/coordinator_tv_des">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="SnackBar &amp; FloatingActionButton "
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/widget_btn_customview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner_selector"
+                android:minHeight="?attr/actionBarSize"
+                android:text="Typical CoordinatorLayout"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/coordinatelayout_cardview_snackbarfab" />
+
+            <Button
+                android:id="@+id/widget_btn_expandingcollapsing_toolbars"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner_selector"
+                android:minHeight="?attr/actionBarSize"
+                android:text="Scroll|enterAlways"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/widget_btn_customview" />
+
+            <TextView
+                android:id="@+id/coordinator_scrollfalgs_tv_enteralways"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_expand_more_white_18dp"
+                android:padding="2dp"
+                android:tag="1"
+                android:text="enterAlways: The view will become visible when scrolling up. This flag is useful in cases when scrolling from the bottom of a list and wanting to expose the Toolbar as soon as scrolling up takes place. "
+                app:layout_constraintLeft_toLeftOf="@id/widget_btn_expandingcollapsing_toolbars"
+                app:layout_constraintRight_toRightOf="@id/widget_btn_expandingcollapsing_toolbars"
+                app:layout_constraintTop_toBottomOf="@id/widget_btn_expandingcollapsing_toolbars" />
+
+
+            <Button
+                android:id="@+id/widget_btn_enteralwaysCollapsed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner_selector"
+                android:minHeight="?attr/actionBarSize"
+                android:text="Scroll | enterAlways | enterAlwaysCollapsed"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/coordinator_scrollfalgs_tv_enteralways" />
+
+            <TextView
+                android:id="@+id/coordinator_scrollfalgs_tv_enteralwaysCollapsed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_expand_more_white_18dp"
+                android:padding="2dp"
+                android:tag="1"
+                android:text="enterAlwaysCollapsed: Normally, when only enterAlways is used, the Toolbar will continue to expand as you scroll down"
+                app:layout_constraintLeft_toLeftOf="@id/widget_btn_expandingcollapsing_toolbars"
+                app:layout_constraintRight_toRightOf="@id/widget_btn_expandingcollapsing_toolbars"
+                app:layout_constraintTop_toBottomOf="@id/widget_btn_enteralwaysCollapsed" />
+
+            <Button
+                android:id="@+id/widget_btn_exitUntilCollapsed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner_selector"
+                android:minHeight="?attr/actionBarSize"
+                android:text="Scroll | exitUntilCollapsed"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/coordinator_scrollfalgs_tv_enteralwaysCollapsed" />
+
+            <TextView
+                android:id="@+id/coordinator_scrollfalgs_tv_exitUntilCollapsed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_expand_more_white_18dp"
+                android:padding="2dp"
+                android:tag="1"
+                android:text="exitUntilCollapsed: When the scroll flag is set, scrolling down will normally cause the entire content to move
+\nBy specifying a minHeight and exitUntilCollapsed, the minimum height of the Toolbar will be reached before the rest of the content begins to scroll and exit from the screen"
+                app:layout_constraintLeft_toLeftOf="@id/widget_btn_expandingcollapsing_toolbars"
+                app:layout_constraintRight_toRightOf="@id/widget_btn_expandingcollapsing_toolbars"
+                app:layout_constraintTop_toBottomOf="@id/widget_btn_exitUntilCollapsed" />
+
+
+            <Button
+                android:id="@+id/widget_btn_snap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner_selector"
+                android:minHeight="?attr/actionBarSize"
+                android:text="Scroll | snap"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/coordinator_scrollfalgs_tv_exitUntilCollapsed" />
+
+            <TextView
+                android:id="@+id/coordinator_scrollfalgs_tv_snap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_expand_more_white_18dp"
+                android:padding="2dp"
+                android:tag="1"
+                android:text="snap: Using this option will determine what to do when a view only has been partially reduced. If scrolling ends and the view size has been reduced to less than 50% of its original, then this view to return to its original size. If the size is greater than 50% of its sized, it will disappear completely."
+                app:layout_constraintLeft_toLeftOf="@id/widget_btn_expandingcollapsing_toolbars"
+                app:layout_constraintRight_toRightOf="@id/widget_btn_expandingcollapsing_toolbars"
+                app:layout_constraintTop_toBottomOf="@id/widget_btn_snap" />
+
+            <Button
+                android:id="@+id/widget_btn_collapsing_effects"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner_selector"
+                android:minHeight="?attr/actionBarSize"
+                android:text="Collapsing Effects"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/coordinator_scrollfalgs_tv_snap" />
+
+            <Button
+                android:id="@+id/widget_btn_parallax"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner_selector"
+                android:minHeight="?attr/actionBarSize"
+                android:text="Parallax Animation"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/coordinator_scrollfalgs_tv_snap" />
+
+
+            <Button
+                android:id="@+id/widget_btn_bottomsheet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner_selector"
+                android:minHeight="?attr/actionBarSize"
+                android:text="Bottom Sheet with RecyclerView"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/widget_btn_parallax" />
+
+            <Button
+                android:id="@+id/widget_btn_bottomsheet2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner_selector"
+                android:minHeight="?attr/actionBarSize"
+                android:text="Bottom Sheet with NestedScrollView"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/widget_btn_bottomsheet" />
+
+            <Button
+                android:id="@+id/widget_btn_modalsheets"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner_selector"
+                android:minHeight="?attr/actionBarSize"
+                android:text="Modal Sheets"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/widget_btn_bottomsheet2" />
+
+
+            <Button
+                android:id="@+id/widget_btn_bahavior"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner_selector"
+                android:minHeight="?attr/actionBarSize"
+                android:text="Custom Bahavior"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/widget_btn_modalsheets" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
