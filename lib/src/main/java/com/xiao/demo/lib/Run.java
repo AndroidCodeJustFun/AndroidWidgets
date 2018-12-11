@@ -9,19 +9,39 @@ import com.xiao.demo.lib.util.DownloadUtil;
 public class Run {
 
 	public static void main(String[] args) {
-		ss(new DownloadUtil.OnDownLoadFinishedListener() {
-			String path;
+//		ss(new DownloadUtil.OnDownLoadFinishedListener() {
+//			String path;
+//
+//			@Override
+//			public String getPath() {
+//				return path;
+//			}
+//
+//			@Override
+//			public void onComplete(String filePath) {
+//				path = filePath;
+//			}
+//		});
+		Integer a1 = 126;
+		Integer a2 = 126;
+		Integer a3 = 128;
+		Integer a4 = 128;
 
-			@Override
-			public String getPath() {
-				return path;
-			}
+		System.out.println("main.[args] 126.equals126" + (a1.equals(a2)));
+		System.out.println("main.[args] 126.==126" + (a1 == a2));
+		System.out.println("main.[args] 128.equals128" + (a3.equals(a4)));
+		System.out.println("main.[args] 128==128" + (a3 == a4));
 
-			@Override
-			public void onComplete(String filePath) {
-				path = filePath;
-			}
-		});
+		String s = "a";
+		String s1 = "a";
+		String s2 = "a" + "b";
+		String s3 = "ab";
+		System.out.println("main.[args] " + s + " == " + s1 + " " + (s == s1));
+		System.out.println("main.[args] " + s + " eauals " + s1 + " " + (s.equals(s1)));
+		System.out.println("main.[args] " + s2 + " == " + s3 + " " + (s2 == s3));
+		System.out.println("main.[args] " + s2 + " eauals " + s3 + " " + (s2.equals(s3)));
+
+
 	}
 
 

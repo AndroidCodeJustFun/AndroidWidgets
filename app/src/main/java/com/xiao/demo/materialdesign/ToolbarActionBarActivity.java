@@ -39,18 +39,7 @@ public class ToolbarActionBarActivity extends BaseActivity {
 	@Override
 	public void initView() {
 		setTitle(TAG);
-		tvContent.setText("View view = findViewById(R.id.toolbar_actionbar);\n" +
-				"if (view != null) {\n" +
-				"Log.e(TAG, \"initActionBar: \" + view.getClass());\n" +
-				"mToolbar = (Toolbar) view;\n" +
-				"if (mToolbar != null) {\n" +
-				"mToolbar.setNavigationOnClickListener(v -> onBackPressed());\n" +
-				"//mToolbar.setOverflowIcon(getResources().getDrawable(R.mipmap.ic_menu_white_24dp));\n" +
-				"mTv_title = view.findViewById(R.id.toolbar_tv_title);\n" +
-				"mLayoutMore = view.findViewById(R.id.toolbar_more);\n" +
-				"setSupportActionBar(mToolbar);\n" +
-				"mActionBar = getSupportActionBar();\n" +
-				"mActionBar.setDisplayShowTitleEnabled(false);");
+		tvContent.setText(new StringBuilder().append("View view = findViewById(R.id.toolbar_actionbar);\n").append("if (view != null) {\n").append("Log.e(TAG, \"initActionBar: \" + view.getClass());\n").append("mToolbar = (Toolbar) view;\n").append("if (mToolbar != null) {\n").append("mToolbar.setNavigationOnClickListener(v -> onBackPressed());\n").append("//mToolbar.setOverflowIcon(getResources().getDrawable(R.mipmap.ic_menu_white_24dp));\n").append("mTv_title = view.findViewById(R.id.toolbar_tv_title);\n").append("mLayoutMore = view.findViewById(R.id.toolbar_more);\n").append("setSupportActionBar(mToolbar);\n").append("mActionBar = getSupportActionBar();\n").append("mActionBar.setDisplayShowTitleEnabled(false);").toString());
 	}
 
 	@Override

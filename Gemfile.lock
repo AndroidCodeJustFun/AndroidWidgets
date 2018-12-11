@@ -24,7 +24,7 @@ GEM
     faraday_middleware (0.12.2)
       faraday (>= 0.7.4, < 1.0)
     fastimage (2.1.0)
-    fastlane (2.66.2)
+    fastlane (2.67.0)
       CFPropertyList (>= 2.3, < 3.0.0)
       addressable (>= 2.3, < 3.0.0)
       babosa (>= 1.0.2, < 2.0.0)
@@ -93,6 +93,9 @@ GEM
     multi_xml (0.6.0)
     multipart-post (2.0.0)
     nanaimo (0.2.3)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (4.2.0)
     os (0.9.6)
     plist (3.3.0)
     public_suffix (2.0.5)
@@ -136,6 +139,8 @@ PLATFORMS
 DEPENDENCIES
   fastlane
   fastlane-plugin-pgyer
+  net-scp (~> 1.2.1)
+  net-ssh (~> 4.2.0)
 
 BUNDLED WITH
    1.16.0

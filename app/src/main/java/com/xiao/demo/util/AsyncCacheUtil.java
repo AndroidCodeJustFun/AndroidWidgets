@@ -66,15 +66,18 @@ public class AsyncCacheUtil implements AsyncProcess<String> {
 			} else {
 				createFile();
 				if (isCreateFileSucess) {
-					new Thread(() -> {
-						try {
-							asyncResult.setResult(es.submit(callable).get());
-						} catch (InterruptedException e) {
-							e.printStackTrace();
-							asyncResult.setException(e);
-						} catch (ExecutionException e) {
-							e.printStackTrace();
-							asyncResult.setException(e);
+					new Thread(new Runnable() {
+						@Override
+						public void run() {
+							try {
+								asyncResult.setResult(es.submit(callable).get());
+							} catch (InterruptedException e) {
+								e.printStackTrace();
+								asyncResult.setException(e);
+							} catch (ExecutionException e) {
+								e.printStackTrace();
+								asyncResult.setException(e);
+							}
 						}
 					}).start();
 				} else {

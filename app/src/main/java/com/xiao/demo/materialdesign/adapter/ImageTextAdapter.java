@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.xiao.demo.ImageLoader.properties.GlideApp;
 import com.xiao.demo.R;
 import com.xiao.demo.base.BaseRecyclerViewAdapter;
 import com.xiao.demo.materialdesign.items.Item;

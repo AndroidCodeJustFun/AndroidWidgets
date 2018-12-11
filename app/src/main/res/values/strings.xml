@@ -119,5 +119,6 @@
     <string name="test_content7">7、烹饪工具升级。\n烤箱在知乎被奉为“相见恨晚的商品top3”，一个300元出头的电烤箱就可以胜任绝大多数的美食阿婆主教程。\n一方面这是中国工业产品白菜价的体现，另一方面，一个烤箱背后是：电动打蛋器和和面机、专用模具与裱花、优质面粉与酵母、黄油、烘焙纸等等配套用品，烘焙是一种高单次成本的烹饪方式。\n我甚至觉得烤箱就是烹饪界的航母，如果一个家庭能保持烤箱不闲置，说明家庭“生活体系”发达。</string>
     <string name="test_content8">8、调味品升级。\n狼与香辛料告诉我们，稀有调料就是软黄金一样的存在。\n现在厨房必须单独开辟一片区域，囤积各种奇怪的调料，他们担任着异域菜品烹饪的重任，得益于电商和网络厨房课堂的普及，普通消费者也知道了它们该怎么用，搭配什么食材，即便懒得细究，迷迭香百里香炒腊肉也没什么不可以，我试过，真的还行。</string>
     <string name="title_activity_handler_thread">HandlerThreadActivity</string>
+    <string name="title_activity_down_load_manager">DownLoadManagerActivity</string>
 
 </resources>

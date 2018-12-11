@@ -1,6 +1,7 @@
 package com.xiao.demo.util;
 
 import android.util.Log;
+import android.util.LruCache;
 
 import java.util.concurrent.ExecutionException;
 

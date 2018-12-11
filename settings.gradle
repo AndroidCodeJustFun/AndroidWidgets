@@ -1,1 +1,1 @@
-include ':app', ':lib', ':groovy'
+include ':app', ':lib'

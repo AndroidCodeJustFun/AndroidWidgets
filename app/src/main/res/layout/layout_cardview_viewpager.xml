@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    app:cardBackgroundColor = "@color/cardview_light_background"
+    app:cardCornerRadius = "5dp"
+    app:cardPreventCornerOverlap = "true"
+    app:cardUseCompatPadding = "true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content">
+
+        <ImageView
+            android:id = "@+id/img"
+            android:layout_width = "50dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "5dp"
+            android:background = "@mipmap/beauty"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintLeft_toLeftOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent" />
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "0dp"
+            android:layout_margin = "5dp"
+            android:gravity = "center"
+            android:text = "@string/app_name"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintRight_toRightOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent" />
+
+        <TextView
+            android:id = "@+id/tv_name"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginLeft = "5dp"
+            android:text = "名称"
+            app:layout_constraintLeft_toRightOf = "@id/img"
+            app:layout_constraintTop_toTopOf = "@id/img" />
+
+        <TextView
+            android:id = "@+id/tv_age"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "5dp"
+            android:text = "23"
+            app:layout_constraintLeft_toLeftOf = "@id/tv_name"
+            app:layout_constraintTop_toBottomOf = "@id/tv_name" />
+
+        <TextView
+            android:id = "@+id/tv_gender"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "5dp"
+            android:text = "男"
+            app:layout_constraintLeft_toLeftOf = "@id/tv_name"
+            app:layout_constraintTop_toBottomOf = "@id/tv_age" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

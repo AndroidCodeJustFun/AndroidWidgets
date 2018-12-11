@@ -7,61 +7,28 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.jakewharton.hugo'
 apply plugin: 'hugo'
 
-//apply plugin:'checkstyle'
-//
-//checkstyle{
-//
-//    configFile rootProject.file('checkstyle.xml')
-//
-//    ignoreFailures false
-//    showViolations true
-//}
-//task ('checkstyle',type:Checkstyle){
-//    source 'src/main/java'
-//    include '**/*.java'
-//    classpath = 'com.puppycrawl.tools:checkstyle:7.1.2'
-//}
+apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    compileSdkVersion 27
+
+    androidExtensions {
+        experimental = true
+    }
 
     defaultConfig {
         applicationId "com.xiao.demo"
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 27
+
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
-//        javaCompileOptions {
-//            annotationProcessorOptions {
-//                arguments = [ moduleName : project.getName() ]
-//            }
-//        }
-
-//        jackOptions {
-//            enabled false
-//        }
 
         buildConfigField("String", "coordinatelayout", rootProject.coordinatorlayout)
 
     }
 
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-
-//    packagingOptions {
-//        exclude 'META-INF/DEPENDENCIES.txt'
-//        exclude 'META-INF/NOTICE'
-//        exclude 'META-INF/NOTICE.txt'
-//        exclude 'META-INF/LICENSE'
-//        exclude 'META-INF/LICENSE.txt'
-//    }
 
     lintOptions {
         abortOnError false
@@ -72,67 +39,88 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            force 'com.android.support:appcompat-v7:27.1.1'
+            force 'com.android.support:exifinterface:27.1.1'
+//            force "com.android.support:support-annotations:$versions.support"
+//            force "com.android.support:support-compat:$versions.support"
+
+        }
+    }
+
+    dependencies {
+        implementation project(':lib')
+        implementation fileTree(include: ['*.jar'], dir: 'libs')
+        implementation 'com.android.support:appcompat-v7:27.1.1'
+//        implementation 'com.android.support:exifinterface:28.0.0-alpha3'
+        implementation 'com.android.support:design:27.1.1'
+        implementation 'com.android.support:cardview-v7:27.1.1'
+        implementation 'com.android.support:recyclerview-v7:27.1.1'
+        implementation 'com.android.support:support-v4:27.1.1'
+        implementation 'com.google.android:flexbox:1.0.0'
+        implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+        testImplementation 'junit:junit:4.12'
+        androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
+            exclude group: 'com.android.support', module: 'support-annotations'
+        })
+        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+        // imageloader
+        implementation "com.squareup.picasso:picasso:$picasso_version"
+        implementation "com.github.bumptech.glide:glide:$glide_version"
+//        kapt "com.github.bumptech.glide:compiler:$glide_version"
+
+        annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
+
+        implementation "com.facebook.fresco:fresco:$fresco_version"
+        implementation "com.facebook.fresco:drawee:$fresco_version"
+        implementation "com.facebook.fresco:stetho:$fresco_version"
+
+        //
+
+        //    // retrofit
+        implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+        implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+        implementation "com.squareup.retrofit2:retrofit-converters:$rootProject.retrofitVersion"
+        implementation "com.squareup.retrofit2:retrofit-adapters:$rootProject.retrofitVersion"
+
+        implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+        implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+
+        implementation "com.jakewharton:butterknife:$butterknife_version"
+//        kapt "com.jakewharton:butterknife-compiler:$butterknife_version"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknife_version"
+
+        implementation 'com.ms-square:expandableTextView:0.1.4'
+
+        //leakcanary in agp 3.0.0-beta4 compile error
+
+        //    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.2'
+
+        //    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.2'
+
+        //Arouter
+        //    implementation 'com.alibaba:arouter-api:1.2.2'
+        //    annotationProcessor 'com.alibaba:arouter-compiler:1.1.3'
+
+        implementation 'org.greenrobot:eventbus:3.0.0'
+
+        implementation 'de.hdodenhof:circleimageview:2.1.0'
+
+        implementation 'com.zhihu.android:matisse:0.4.3'
+
+        androidTestImplementation 'tools.fastlane:screengrab:1.1.0'
+
+    }
+
 }
 
-dependencies {
-    implementation project(':lib')
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
-    implementation 'com.google.android:flexbox:0.2.3'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-
-    // imageloader
-    implementation 'com.squareup.picasso:picasso:2.5.2'
-    implementation 'com.github.bumptech.glide:glide:4.0.0'
-    implementation 'com.facebook.fresco:fresco:1.5.0'
-    implementation 'com.facebook.fresco:drawee:1.5.0'
-    implementation 'com.facebook.fresco:stetho:1.5.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0'
-
-    //
-
-    //    // retrofit
-    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
-    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
-    implementation "com.squareup.retrofit2:retrofit-converters:$rootProject.retrofitVersion"
-    implementation "com.squareup.retrofit2:retrofit-adapters:$rootProject.retrofitVersion"
-
-    //
-
-    //    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
-    implementation 'org.greenrobot:eventbus:3.0.0'
-
-    //
-    implementation 'io.reactivex.rxjava2:rxjava:2.1.3'
-    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
-
-    //
-    implementation 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    implementation 'com.ms-square:expandableTextView:0.1.4'
-
-    //leakcanary in agp 3.0.0-beta4 compile error
-
-    //    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.2'
-
-    //    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.2'
-
-    //Arouter
-
-    //    implementation 'com.alibaba:arouter-api:1.2.2'
-
-    //    annotationProcessor 'com.alibaba:arouter-compiler:1.1.3'
-    implementation 'org.greenrobot:eventbus:3.0.0'
-
-    implementation 'de.hdodenhof:circleimageview:2.1.0'
-
-}

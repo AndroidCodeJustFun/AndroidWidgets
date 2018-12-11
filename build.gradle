@@ -1,15 +1,18 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.1.60'
+    ext.kotlin_version = '1.2.71'
+
     repositories {
         google()
         jcenter()
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:3.2.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+
         // count method call
         classpath 'com.jakewharton.hugo:hugo-plugin:1.2.1'
 
@@ -21,17 +24,27 @@ buildscript {
     }
 
     ext{
-        retrofitVersion = '2.3.0'
-        supportLibraryVersion = '26.1.0'
-        gsonVersion = '2.8.0'
+        fresco_version = '1.10.0'
+        glide_version = '4.7.1'
+        picasso_version = '2.71828'
 
+        retrofitVersion = '2.4.0'
+        gsonVersion = '2.8.1'
 
+        rxjava_version = '2.1.17'
+        rxandroid_version = '2.0.2'
+
+        butterknife_version= '8.8.1'
 
         // out source link
         coordinatorlayout = '"https://guides.codepath.com/android/Handling-Scrolls-with-CoordinatorLayout#expanding-and-collapsing-toolbars"'
 
     }
 
+}
+
+subprojects {
+    task allDeps(type: DependencyReportTask) {}
 }
 
 allprojects {
