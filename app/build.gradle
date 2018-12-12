@@ -120,6 +120,8 @@ android {
 
         androidTestImplementation 'tools.fastlane:screengrab:1.1.0'
 
+        implementation 'com.qmuiteam:qmui:1.1.3'
+
     }
 
 }
