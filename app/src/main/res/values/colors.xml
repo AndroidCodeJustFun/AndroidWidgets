@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="textColorPrimary">#ccc</color>
-    <color name="textColorSecondary">#00ff00</color>
-    <color name="textColorTertiary">#0000ff</color>
-    <color name="colorCardViewDarker">#eee</color>
-    <color name="colorCardViewLight">#ccc</color>
+    <color name = "colorPrimary">#3F51B5</color>
+    <color name = "colorPrimaryDark">#303F9F</color>
+    <color name = "colorAccent">#FF4081</color>
+    <color name = "textColorPrimary">#ccc</color>
+    <color name = "textColorSecondary">#00ff00</color>
+    <color name = "textColorTertiary">#0000ff</color>
+    <color name = "colorCardViewDarker">#eee</color>
+    <color name = "colorCardViewLight">#ccc</color>
+    <color name = "red">#FF0000</color>
+    <color name = "yellow">#FFFF00</color>
+    <color name = "blue">#0000FF</color>
+    <!-- wheelview线 -->
+    <color name = "province_line_border">#C7C7C7</color>
+    <!--TabHost-->
+    // 首页tab背景颜色
+    <color name = "tab_host_bg_color">#272727</color>
+    <color name = "tab_bottom_text_unseletor">#666666</color>
+    <color name = "tab_bottom_text_seletor">#FF6633</color>
+    <color name = "tab_bg">#f3f4f4</color>
+    <color name = "home_background">#FFFFFF</color>
 
+    <color name = "vip_name_color">#e4ad5a</color>
+    <color name = "white">#ffffff</color>
 </resources>

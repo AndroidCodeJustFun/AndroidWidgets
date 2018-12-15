@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    app:layout_behavior = "@string/appbar_scrolling_view_behavior"
+    tools:showIn = "@layout/activity_animation_manager">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:padding = "5dp"
+        app:alignContent = "flex_start"
+        app:alignItems = "stretch"
+        app:flexDirection = "row"
+        app:flexWrap = "wrap"
+        app:justifyContent = "flex_start">
+
+        <Button
+            android:id = "@+id/am_btn_valueanimator"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "Value Animator" />
+
+        <Button
+            android:id = "@+id/am_btn_objectanimator"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "Object Animator" />
+
+        <Button
+            android:id = "@+id/am_btn_interpolater"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:text = "Interpolater" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+</android.support.v4.widget.NestedScrollView>

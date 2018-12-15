@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_object_animation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/activity_object_animation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/animationtest_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ask_search" />
+
+            <TextView
+                android:id="@+id/animationtest_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1232435434"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/animation_cb_system"
+                android:layout_width="wrap_content"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:text="使用系统动画/NineOldAndroidAnimation" />
+
+            <Button
+                android:id="@+id/animationtest_btn_start"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Start" />
+
+            <Button
+                android:id="@+id/animationtest_btn_end"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="End" />
+
+            <Button
+                android:id="@+id/animationtest_btn_pause"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Pause" />
+
+            <Button
+                android:id="@+id/animationtest_btn_resume"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Resume" />
+
+
+            <Button
+                android:id="@+id/animationtest_btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Cancel" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

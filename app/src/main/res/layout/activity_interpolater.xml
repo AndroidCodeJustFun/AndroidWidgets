@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_interpolater"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.xiao.demo.recyclerview.animation.InterpolaterActivity">
+
+        <LinearLayout
+            android:id="@+id/control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/interpolater_btn_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="开始" />
+
+            <Button
+                android:id="@+id/interpolater_btn_end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="结束" />
+
+            <Button
+                android:id="@+id/interpolater_btn_pause"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="暂停" />
+
+            <Button
+                android:id="@+id/interpolater_btn_resume"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="恢复" />
+
+            <Button
+                android:id="@+id/interpolater_btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="取消" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/control"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_openpath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="开通Path动画" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AccelerateDecelerateInterpolator--先加速后减速"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/interpolater_tv_accedece"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/blue"
+                android:text="1111"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AccelerateInterpolator--加速"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/interpolater_tv_acce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@android:color/holo_blue_light"
+                android:text="2222"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnticipateInterpolator --向前插补器（先往回跑一点，再加速向前跑）"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/interpolater_tv_anticipate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@android:color/holo_green_light"
+                android:text="3333"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AnticipateOvershootInterpolator --向前向后插补器（先往回跑一点，再向后跑一点，再回到终点）"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/interpolater_tv_anticipateovershoot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@android:color/holo_orange_dark"
+                android:text="4444"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BounceInterpolator --反弹插补器（在动画结束的时候回弹几下，如果是竖直向下运动的话，就是玻璃球下掉弹几下的效果）"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/interpolater_tv_bounce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/blue"
+                android:text="5555"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CycleInterpolator--循环插补器（按指定的路径以指定时间（或者是偏移量）的1/4、变速地执行一遍，再按指定的轨迹的相反反向走1/2的"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/interpolater_tv_cycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@android:color/holo_blue_light"
+                android:text="6666"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DecelerateInterpolator --减速 先快后慢"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/interpolater_tv_decelerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@android:color/holo_green_light"
+                android:text="7777"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LinearInterpolator --直线插值器  匀速"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/interpolater_tv_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@android:color/holo_orange_dark"
+                android:text="8888"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OvershootInterpolator--超出插补器（向前跑直到越界一点后，再往回跑）"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/interpolater_tv_overshoot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/blue"
+                android:text="9999"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PathInterpolator--路径插值器 ？？？？？"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/interpolater_tv_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@android:color/holo_blue_light"
+                android:text="aaaa"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FastOutLinearInInterpolator --基于贝塞尔曲线的插补器 效果：依次 慢慢快"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/interpolater_tv_fastoutlinear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@android:color/holo_green_light"
+                android:text="bbbb"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FastOutSlowInInterpolator --基于贝塞尔曲线的插补器 效果：依次 慢快慢"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/interpolater_tv_fastoutslow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@android:color/holo_orange_dark"
+                android:text="cccc"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LinearOutSlowInInterpolator--基于贝塞尔曲线的插补器 效果：依次 快慢慢"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/interpolater_tv_linearoutslow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/blue"
+                android:text="dddd"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
