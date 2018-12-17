@@ -1,4 +1,4 @@
-package com.xiao.demo.recyclerview.widget;
+package com.xiao.demo.util;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -9,8 +9,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.View;
-
-import com.xiao.demo.recyclerview.ui.adapter.ListAdapter;
 
 /**
  * RecyclerView 分割线 或者传递 Drawable  或者 传递纯色色值  通过Paint绘制
@@ -43,8 +41,9 @@ public class RecyclerViewDecoration extends RecyclerView.ItemDecoration {
      * @param color        Color.BLACK 或者 getResource().getColor(R.color.xxx);
      */
     public RecyclerViewDecoration(Context context, int mOrientation, int color) {
-        if (mOrientation != LinearLayoutManager.VERTICAL && mOrientation != LinearLayoutManager.HORIZONTAL && mOrientation != ORIENTATION_HYBIRD)
+        if (mOrientation != LinearLayoutManager.VERTICAL && mOrientation != LinearLayoutManager.HORIZONTAL && mOrientation != ORIENTATION_HYBIRD) {
             throw new IllegalArgumentException("orientation is Illegal , Must be LinearLayoutManager.VERTICAL or LinearLayoutManager.HORIZONTAL or ORIENTATION_HYBIRD");
+        }
         this.mOrientation = mOrientation;
         mPaint = new Paint();
         mPaint.setFlags(Paint.ANTI_ALIAS_FLAG);
@@ -55,8 +54,9 @@ public class RecyclerViewDecoration extends RecyclerView.ItemDecoration {
     }
 
     public RecyclerViewDecoration(Context context, int mOrientation, Drawable mDrawable) {
-        if (mOrientation != LinearLayoutManager.VERTICAL && mOrientation != LinearLayoutManager.HORIZONTAL && mOrientation != ORIENTATION_HYBIRD)
+        if (mOrientation != LinearLayoutManager.VERTICAL && mOrientation != LinearLayoutManager.HORIZONTAL && mOrientation != ORIENTATION_HYBIRD) {
             throw new IllegalArgumentException("orientation is Illegal , Must be LinearLayoutManager.VERTICAL or LinearLayoutManager.HORIZONTAL or ORIENTATION_HYBIRD");
+        }
         this.mOrientation = mOrientation;
         this.mDrawable = mDrawable;
     }
@@ -104,8 +104,8 @@ public class RecyclerViewDecoration extends RecyclerView.ItemDecoration {
         for (int i = 0; i < childSize; i++) {
             final View child = parent.getChildAt(i);
             RecyclerView.ViewHolder childViewHolder = parent.getChildViewHolder(child);
-            if (childViewHolder instanceof ListAdapter.HeaderViewHolder) continue;
-            if (childViewHolder instanceof ListAdapter.GridViewHolder) continue;
+//            if (childViewHolder instanceof ListAdapter.HeaderViewHolder) continue;
+//            if (childViewHolder instanceof ListAdapter.GridViewHolder) continue;
             RecyclerView.LayoutParams layoutParams = (RecyclerView.LayoutParams) child.getLayoutParams();
             final int top = child.getBottom() + layoutParams.bottomMargin;
             int left = child.getLeft() - layoutParams.leftMargin;

@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.xiao.demo.ImageLoader.ImageLoaderActivity;
+import com.xiao.demo.animation.AnimationManagerActivity;
 import com.xiao.demo.kotlin.KotlinMainActivity;
 import com.xiao.demo.materialdesign.MaterialDesignActivity;
 import com.xiao.demo.materialdesign.WidgetActivity;
@@ -48,16 +49,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        // lambda expression
-        btn_Animation.setOnClickListener(view -> {
-            Toast.makeText(this, "Go Animation", Toast.LENGTH_SHORT).show();
-        });
-        btn_widget.setOnClickListener(view -> {
-            WidgetActivity.start(MainActivity.this);
-        });
-        btn_kotlin.setOnClickListener(v -> {
-            KotlinMainActivity.start(MainActivity.this);
-        });
+        if (btn_Animation != null) {
+            btn_Animation.setOnClickListener(view -> {
+                AnimationManagerActivity.start(MainActivity.this);
+            });
+        } else {
+            Log.e(TAG, "com.xiao.demo.MainActivity.onCreate.[savedInstanceState]: btn_aniomation is null ");
+        }
+        if (btn_widget != null) {
+            btn_widget.setOnClickListener(view -> {
+                WidgetActivity.start(MainActivity.this);
+            });
+        }
+        if (btn_kotlin != null) {
+            btn_kotlin.setOnClickListener(v -> {
+                KotlinMainActivity.start(MainActivity.this);
+            });
+        }
         // ATTENTION: This was auto-generated to handle app links.
         Intent appLinkIntent = getIntent();
         String appLinkAction = appLinkIntent.getAction();
@@ -78,6 +86,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Go Retrofit", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.main_btn_arouter:
+                break;
+            default:
                 break;
         }
     }

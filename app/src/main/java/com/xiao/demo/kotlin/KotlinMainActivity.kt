@@ -13,7 +13,7 @@ class KotlinMainActivity : AppCompatActivity(), View.OnClickListener {
         @JvmStatic
         fun start(context: Context) {
             val intent = Intent()
-            intent.setClass(context, KotlinMainActivity.javaClass);
+            intent.setClass(context, KotlinMainActivity::class.java)
         }
     }
 

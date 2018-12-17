@@ -144,25 +144,30 @@
         <activity
             android:name = ".animation.AnimationManagerActivity"
             android:launchMode = "singleTop"
-            android:screenOrientation = "portrait" />
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme.NoActionBar" />
 
         <activity
             android:name = ".animation.AnimationActivity"
             android:launchMode = "singleTop"
-            android:screenOrientation = "portrait" />
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme.NoActionBar" />
 
         <activity
             android:name = ".animation.InterpolaterActivity"
             android:launchMode = "singleTop"
-            android:screenOrientation = "portrait" />
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme.NoActionBar" />
         <activity
             android:name = ".animation.ObjectAnimationActivity"
             android:launchMode = "singleTop"
-            android:screenOrientation = "portrait" />
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme.NoActionBar" />
         <activity
             android:name = ".animation.ValueAnimatorActivity"
             android:launchMode = "singleTop"
-            android:screenOrientation = "portrait" />
+            android:screenOrientation = "portrait"
+            android:theme = "@style/AppTheme.NoActionBar" />
 
     </application>
 
